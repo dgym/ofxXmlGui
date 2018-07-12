@@ -236,6 +236,7 @@ bool xmlgui::Slider::keyPressed(int key) {
 
 
 bool xmlgui::Slider::keyReleased(int key) {
+	return false;
 }
 
 void xmlgui::Slider::getParameterInfo(vector<ParameterInfo> &params) {

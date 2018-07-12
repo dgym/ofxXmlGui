@@ -128,6 +128,7 @@ bool xmlgui::Editor::keyPressed(int k) {
 	#endif
 	if(k==OF_KEY_BACKSPACE) {
 		deleteFocusedControl();
+		return true;
 	}
 
 	if(focusedControl!=NULL) {
@@ -148,8 +149,9 @@ bool xmlgui::Editor::keyPressed(int k) {
 		} else if(k==OF_KEY_RIGHT) {
 			focusedControl->x += increment;
 		}
+		return true;
 	}
-
+	return false;
 }
 
 void xmlgui::Editor::touchOver(int x, int y, int id) {

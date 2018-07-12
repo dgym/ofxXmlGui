@@ -35,9 +35,9 @@ namespace xmlgui {
 
 		bool mouseDragged(ofMouseEventArgs &e);
 		bool mouseReleased(ofMouseEventArgs &e);
-		bool mouseScrolled(ofMouseEventArgs &e){}
-		bool mouseEntered(ofMouseEventArgs &e){}
-		bool mouseExited(ofMouseEventArgs &e){}
+		bool mouseScrolled(ofMouseEventArgs &e){return false;}
+		bool mouseEntered(ofMouseEventArgs &e){return false;}
+		bool mouseExited(ofMouseEventArgs &e){return false;}
 		
 		bool keyPressed(ofKeyEventArgs &e);
 		bool keyReleased(ofKeyEventArgs &e);

@@ -240,6 +240,7 @@ bool xmlgui::TextField::touchDown(int x, int y, int id){
 		parent->setKeyboardFocus(this);
 		return true;
 	}
+	return false;
 }
 
 
